@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.billBox {
+    width: 60%;
+    height: 500px;
+    background-color: rgb(190, 150, 230);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+    background-color: blueviolet;
+    width: 60%;
+    height: 50px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.totalList{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: #c7c6c6 5px 5px 5px 2px;
+    width: 60%;
+    height: 80%;
+    overflow-y: scroll;
+    padding: 15px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    color:rgb(43, 43, 43);
+    text-align: center;
+    margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuList {
+    width: 50%;
+    margin: 0 auto;
 }
+
+.menuList div {
+    margin: 10px;  
+}
+
+.menuList div input {
+    margin-right: 10px;
+}
+
+.beforeDiscountBox, .totalBox{
+    margin: 20px;
+}
+
+.beforeDiscountBox p {
+    margin: 10px 0;
+}
+
+.totalBox p{
+    font-weight: bold;
+    font-size: 25px;
+} 
